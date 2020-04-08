@@ -16,4 +16,4 @@ Go to `label_transform` and find a code to transform  the annotations to YOLO fo
 2. Run `train-kaist_all.py` 
 
 ## Plot Precision
-Run `plot.py` to plot precision from `test_data_map.py` 
+Run `plot.py` to plot precision from `test_data_map.txt` 
