@@ -8,6 +8,10 @@ $ cd PyTorch-YOLO-V3-KAIST/
 $ sudo pip3 install -r requirements.txt
 ```
 
+##### Download pretrained weights
+if you wan use pretrained darknet-53 on IMAGENET weights, please download [darknet53.conv.74](https://pjreddie.com/media/files/darknet53.conv.74),and put it into `weights/`
+
+
 ## Conversion Label to YOLO format
 Go to `label_transform` and find a code to transform  the annotations to YOLO format. Check the flag and directories inside the file depending on your directories. 
 
