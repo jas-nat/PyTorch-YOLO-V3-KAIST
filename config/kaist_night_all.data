@@ -1,0 +1,8 @@
+classes=3
+train_rgb=data/kaist/train_night_rgb.txt
+train_ir=data/kaist/train_night_ir.txt
+valid_rgb=data/kaist/val_night_rgb.txt
+valid_ir=data/kaist/val_night_ir.txt
+names=data/kaist.names
+backup=backup/
+eval=kaist
