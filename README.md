@@ -12,5 +12,8 @@ $ sudo pip3 install -r requirements.txt
 Go to `label_transform` and find a code to transform  the annotations to YOLO format. Check the flag and directories inside the file depending on your directories. 
 
 ## To train
-Run `train-kaist_all.py` 
+1. Configure `.cfg` and `.data` file in `config`
+2. Run `train-kaist_all.py` 
 
+## Plot Precision
+Run `plot.py` to plot precision from `test_data_map.py` 
