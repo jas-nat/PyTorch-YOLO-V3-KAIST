@@ -23,7 +23,7 @@ Please be aware of the followings:
 -location of training files and validations 
 2. Run the training files
 
-##To detect samples
+## Testing Detection with real image samples
 You can use `detect.py` to run some samples after finishing the training. 
 Please be aware of the followings:
 1. Load the correct weights and directory for sample images
@@ -32,7 +32,7 @@ Please be aware of the followings:
 ## Plot Precision
 Run `plot.py` to plot precision from `test_data_map.txt` 
 
-##Notice
+## Notice
 I am not an expert of this field yet. I am just doing it for my own research purporse. If you ask questions, I will try my best to answer it.
 
 ## Paper
