@@ -1,5 +1,5 @@
 # PyTorch YOLO V3 KAIST
-Try to apply PyTorch YOLO-V3 from [eriklindernoen](https://github.com/eriklindernoren/PyTorch-YOLOv3) with modification for KAIST Dataset. Now it supports 4 channels (RGB + Infrared) images. 
+Hi! This repository was made for doing my final project of my undergraduate program. Try to apply PyTorch YOLO-V3 from [eriklindernoen](https://github.com/eriklindernoren/PyTorch-YOLOv3) with modification for KAIST Dataset. Now it supports 4 channels (RGB + Infrared) images. 
 
 ## Installation
 ```
@@ -11,16 +11,29 @@ $ sudo pip3 install -r requirements.txt
 ##### Download pretrained weights
 if you wan use pretrained darknet-53 on IMAGENET weights, please download [darknet53.conv.74](https://pjreddie.com/media/files/darknet53.conv.74),and put it into `weights/`
 
-
 ## Conversion Label to YOLO format
 Go to `label_transform` and find a code to transform  the annotations to YOLO format. Check the flag and directories inside the file depending on your directories. 
 
 ## To train
+There are 2 training files. The first one is `train-kaist_single.py` which is mainly based on [packyan] (https://github.com/packyan/PyTorch-YOLOv3-kitti) and `train-kaist_all.py` which is based on the orignal author [eriklindernoen](https://github.com/eriklindernoren/PyTorch-YOLOv3). If you want to do training on RGB or infrared images, use `train-kaist_single.py`, and if you want to do 4 channels at the same time (RGB+Infrared / Multispectral), use `train-kaist_all.py`. 
+
+Please be aware of the followings:
 1. Configure `.cfg` and `.data` file in `config`
-2. Run `train-kaist_all.py` 
+-channels: 4 for multispectral, 3 for RGB, and 1 for infrared only
+-location of training files and validations 
+2. Run the training files
+
+##To detect samples
+You can use `detect.py` to run some samples after finishing the training. 
+Please be aware of the followings:
+1. Load the correct weights and directory for sample images
+2. Write the correct name for the output directories
 
 ## Plot Precision
 Run `plot.py` to plot precision from `test_data_map.txt` 
+
+##Notice
+I am not an expert of this field yet. I am just doing it for my own research purporse. If you ask questions, I will try my best to answer it.
 
 ## Paper
 ### YOLOv3: An Incremental Improvement
