@@ -1,8 +1,8 @@
-# PyTorch YOLO V3 KAIST
-Hi! This repository was made for doing my final project of my undergraduate program. Try to apply PyTorch YOLO-V3 from [eriklindernoen](https://github.com/eriklindernoren/PyTorch-YOLOv3) with modification for KAIST Dataset. Now it supports 4 channels (RGB + Infrared) images. 
-
 # Disclaimer
 I stop working on this repository. If you would like to see further updates, please take a look [my new repository](https://github.com/jas-nat/yolov3-KAIST)
+
+# PyTorch YOLO V3 KAIST
+Hi! This repository was made for doing my final project of my undergraduate program. Try to apply PyTorch YOLO-V3 from [eriklindernoen](https://github.com/eriklindernoren/PyTorch-YOLOv3) with modification for KAIST Dataset. Now it supports 4 channels (RGB + Infrared) images. 
 
 ## Installation
 ```
